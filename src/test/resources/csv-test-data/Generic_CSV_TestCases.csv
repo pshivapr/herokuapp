@@ -1,0 +1,7 @@
+TEST NAME,ENDPOINT,STATUS CODE,JSON PATH,RESPONSE MESSAGE
+Validate_Instructions_Text,instructions,200,todo,data returned by the API is valid
+Get All User List,users,200,[1].email,bhalgarth1@timesonline.co.uk
+Validate Users in Kundung city,city/Kundung/users,200,[0].email,bhalgarth1@timesonline.co.uk
+Valid User Returns 200,user/2,200,email,bhalgarth1@timesonline.co.uk
+Invalid User Returns_404,user/xx,404,message,Id xx doesn't exist
+Failure_Example_Expecting 200 but get 404,user/xx,200,NOTE, TEST WILL FAIL
